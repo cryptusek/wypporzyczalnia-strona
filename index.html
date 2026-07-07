@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SportCar Rental Polska — wynajem Toyoty Supry MK5, Corvette C7, Jaguara F-Type i BMW M3 G80 z dostawą pod wskazany adres."
+    />
+    <meta name="theme-color" content="#08090a" />
+    <title>SportCar Rental Polska — Dotknij szybkości</title>
+    <link rel="preload" href="fleet-hero.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="availability.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#start" aria-label="SportCar Rental Polska — strona główna">
+        <span class="brand-mark">SCR</span>
+        <span class="brand-copy">SportCar<br />Rental Polska</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Główna nawigacja">
+        <a href="#flota">Flota</a>
+        <a href="#doswiadczenie">Doświadczenie</a>
+        <a href="#pakiety">Cennik</a>
+      </nav>
+
+      <a class="header-cta" href="#rezerwacja">
+        <span>Sprawdź termin</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+        <span class="sr-only">Otwórz menu</span>
+      </button>
+    </header>
+
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Nawigacja mobilna">
+      <a href="#flota">Flota</a>
+      <a href="#doswiadczenie">Doświadczenie</a>
+      <a href="#pakiety">Cennik</a>
+      <a href="#rezerwacja">Rezerwacja</a>
+    </nav>
+
+    <main>
+      <section id="start" class="hero" aria-labelledby="hero-title">
+        <div class="hero-backdrop parallax-layer" data-speed="0.08" aria-hidden="true"></div>
+        <div class="hero-fleet parallax-layer" data-speed="0.18" aria-hidden="true"></div>
+        <div class="hero-foreground parallax-layer" data-speed="0.29" aria-hidden="true"></div>
+        <div class="hero-streak" aria-hidden="true"></div>
+
+        <div class="hero-kicker reveal">
+          <span>01 / 04</span>
+          <span>Flota ikon motoryzacji</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Sportowe auta. Dostawa pod Twoje drzwi.</p>
+          <h1 id="hero-title" class="display-title">
+            <span class="title-line reveal">Dotknij</span>
+            <span class="title-line title-outline reveal">szybkości</span>
+          </h1>
+          <div class="hero-actions reveal">
+            <a class="button button-primary magnetic" href="#flota">
+              <span>Wybierz swoją ikonę</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <p>
+              Cztery samochody.<br />
+              Jeden niezapomniany weekend.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-meta reveal">
+          <div>
+            <span>Od</span>
+            <strong>800 PLN</strong>
+            <span>/ doba</span>
+          </div>
+          <div>
+            <span>Dostawa</span>
+            <strong>pod adres</strong>
+            <span>dom · hotel · lotnisko</span>
+          </div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span>Scroll to explore</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section id="flota" class="fleet-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Kolekcja / 2025</p>
+          <h2>Wybierz<br /><em>swój charakter.</em></h2>
+          <p class="section-intro">
+            Nie wypożyczamy przypadkowych aut. Oddajemy w Twoje ręce konkretne
+            ikony — każdą z własnym temperamentem.
+          </p>
+        </div>
+
+        <div class="fleet-grid">
+          <a class="car-card tilt-card reveal" data-car="supra" href="car.html?car=supra" aria-label="Zobacz Toyotę Suprę MK5">
+            <div class="car-visual car-visual-supra" aria-hidden="true">
+              <span class="car-index">01</span>
+              <span class="car-glow"></span>
+            </div>
+            <div class="car-card-copy">
+              <div>
+                <p>Japan / RWD</p>
+                <h3>Toyota<br />Supra MK5</h3>
+              </div>
+              <div class="card-spec">
+                <strong>340 KM</strong>
+                <span>4,3 s · 0–100</span>
+              </div>
+              <span class="text-link">
+                Zobacz parametry <span>↗</span>
+              </span>
+            </div>
+          </a>
+
+          <a class="car-card tilt-card reveal" data-car="corvette" href="car.html?car=corvette" aria-label="Zobacz Chevroleta Corvette C7">
+            <div class="car-visual car-visual-corvette" aria-hidden="true">
+              <span class="car-index">02</span>
+              <span class="car-glow"></span>
+            </div>
+            <div class="car-card-copy">
+              <div>
+                <p>USA / V8</p>
+                <h3>Chevrolet<br />Corvette C7</h3>
+              </div>
+              <div class="card-spec">
+                <strong>461 KM</strong>
+                <span>3,7 s · 0–100</span>
+              </div>
+              <span class="text-link">
+                Zobacz parametry <span>↗</span>
+              </span>
+            </div>
+          </a>
+
+          <a class="car-card tilt-card reveal" data-car="jaguar" href="car.html?car=jaguar" aria-label="Zobacz Jaguara F-Type">
+            <div class="car-visual car-visual-jaguar" aria-hidden="true">
+              <span class="car-index">03</span>
+              <span class="car-glow"></span>
+            </div>
+            <div class="car-card-copy">
+              <div>
+                <p>UK / Grand Tourer</p>
+                <h3>Jaguar<br />F-Type</h3>
+              </div>
+              <div class="card-spec">
+                <strong>300–575 KM</strong>
+                <span>od 3,7 s · 0–100</span>
+              </div>
+              <span class="text-link">
+                Zobacz parametry <span>↗</span>
+              </span>
+            </div>
+          </a>
+
+          <a class="car-card tilt-card reveal" data-car="bmw" href="car.html?car=bmw" aria-label="Zobacz BMW M3 G80">
+            <div class="car-visual car-visual-bmw" aria-hidden="true">
+              <span class="car-index">04</span>
+              <span class="car-glow"></span>
+            </div>
+            <div class="car-card-copy">
+              <div>
+                <p>Germany / M Power</p>
+                <h3>BMW<br />M3 G80</h3>
+              </div>
+              <div class="card-spec">
+                <strong>510 KM</strong>
+                <span>od 3,5 s · 0–100</span>
+              </div>
+              <span class="text-link">
+                Zobacz parametry <span>↗</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="spec-showcase" aria-labelledby="spec-title">
+        <div class="spec-bg" aria-hidden="true"></div>
+        <div class="spec-header reveal">
+          <p class="eyebrow">Dane / bez kompromisów</p>
+          <p id="spec-counter">02 — 04</p>
+        </div>
+
+        <div class="spec-content">
+          <div class="spec-title-wrap reveal">
+            <p id="spec-origin">USA · 6.2L V8</p>
+            <h2 id="spec-title">Corvette<br /><em>C7</em></h2>
+            <p id="spec-description">
+              V8, które nie potrzebuje ścieżki dźwiękowej. Brutalne, głośne i
+              zaprojektowane po to, żeby zatrzymywać spojrzenia.
+            </p>
+          </div>
+
+          <div class="spec-data reveal" aria-live="polite">
+            <div>
+              <span>Moc</span>
+              <strong id="spec-power">461 KM</strong>
+            </div>
+            <div>
+              <span>0–100 km/h</span>
+              <strong id="spec-zero">3,7 s</strong>
+            </div>
+            <div>
+              <span>Napęd</span>
+              <strong id="spec-drive">RWD</strong>
+            </div>
+            <div>
+              <span>Doba od</span>
+              <strong id="spec-price">1 100 PLN</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="spec-selector reveal" role="tablist" aria-label="Wybierz samochód">
+          <button type="button" role="tab" aria-selected="false" data-spec-car="supra">01 Supra</button>
+          <button type="button" role="tab" aria-selected="true" data-spec-car="corvette">02 Corvette</button>
+          <button type="button" role="tab" aria-selected="false" data-spec-car="jaguar">03 F-Type</button>
+          <button type="button" role="tab" aria-selected="false" data-spec-car="bmw">04 M3</button>
+        </div>
+      </section>
+
+      <section id="doswiadczenie" class="experience-section">
+        <div class="kinetic-type" aria-hidden="true">
+          <span data-speed="0.16">Nie wynajmujemy aut.</span>
+          <span class="outline" data-speed="-0.11">Wynajmujemy emocje.</span>
+        </div>
+
+        <div class="experience-grid">
+          <div class="experience-statement reveal">
+            <p class="eyebrow">Od drzwi do drogi</p>
+            <h2>Zero kolejek.<br />Maksimum <em>wrażeń.</em></h2>
+          </div>
+
+          <ol class="process-list">
+            <li class="reveal">
+              <span>01</span>
+              <div>
+                <h3>Wybierasz ikonę</h3>
+                <p>Supra, Corvette, F-Type albo M3 — porównaj parametry i pakiet.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span>02</span>
+              <div>
+                <h3>Potwierdzasz termin</h3>
+                <p>Krótki formularz, jasna cena i przejrzysta kaucja bez ukrytych opłat.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span>03</span>
+              <div>
+                <h3>My dostarczamy</h3>
+                <p>Dom, hotel, biuro lub lotnisko. Samochód pojawia się tam, gdzie zaczyna się plan.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="service-strip">
+          <span>250 km / doba</span>
+          <i></i>
+          <span>Dostawa pod adres</span>
+          <i></i>
+          <span>Pakiety od 4 godzin</span>
+          <i></i>
+          <span>Kaucja zwracana 24–48 h</span>
+        </div>
+      </section>
+
+      <section id="pakiety" class="pricing-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Prosto / przejrzyście</p>
+          <h2>Ile trwa<br /><em>Twój weekend?</em></h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <span>01</span>
+            <p>Starter</p>
+            <h3>4 godziny</h3>
+            <strong>od 550 PLN</strong>
+            <ul>
+              <li>Spontaniczny wypad</li>
+              <li>Urodziny lub prezent</li>
+              <li>Opcja dostawy</li>
+            </ul>
+            <a href="#rezerwacja" data-package="Starter — 4 godziny">Wybieram <span>↗</span></a>
+          </article>
+
+          <article class="price-card reveal">
+            <span>02</span>
+            <p>Classical</p>
+            <h3>24 godziny</h3>
+            <strong>od 800 PLN</strong>
+            <ul>
+              <li>250 km w cenie</li>
+              <li>Pełna doba z autem</li>
+              <li>Najlepszy pierwszy wybór</li>
+            </ul>
+            <a href="#rezerwacja" data-package="Classical — 24 godziny">Wybieram <span>↗</span></a>
+          </article>
+
+          <article class="price-card price-card-featured reveal">
+            <span>03</span>
+            <p>Weekend</p>
+            <h3>48 godzin</h3>
+            <strong>od 1 350 PLN</strong>
+            <ul>
+              <li>Piątek–niedziela</li>
+              <li>Najczęściej wybierany</li>
+              <li>Najwięcej czasu na trasie</li>
+            </ul>
+            <a href="#rezerwacja" data-package="Weekend — 48 godzin">Wybieram <span>↗</span></a>
+          </article>
+
+          <article class="price-card reveal">
+            <span>04</span>
+            <p>Full week</p>
+            <h3>7 dni</h3>
+            <strong>od 4 500 PLN</strong>
+            <ul>
+              <li>Najniższa cena za dobę</li>
+              <li>Pełne siedem dni</li>
+              <li>Pakiet dla prawdziwej przygody</li>
+            </ul>
+            <a href="#rezerwacja" data-package="Full week — 7 dni">Wybieram <span>↗</span></a>
+          </article>
+        </div>
+
+        <p class="pricing-note reveal">
+          Ceny „od” dotyczą Jaguara F-Type w wariancie rekomendowanym. Dokładna
+          cena zależy od wybranego auta, terminu i miejsca dostawy.
+        </p>
+      </section>
+
+      <section class="occasions-section">
+        <div class="occasion-photo parallax-layer" data-speed="0.09" aria-hidden="true"></div>
+        <div class="occasion-overlay"></div>
+        <div class="occasion-copy reveal">
+          <p class="eyebrow">Nie tylko weekend</p>
+          <h2>Wesele. Sesja.<br />Teledysk. <em>Prezent.</em></h2>
+          <p>
+            Pakiety eventowe od 750 PLN, vouchery ważne 12 miesięcy i możliwość
+            dostawy samochodu bezpośrednio na plan lub miejsce wydarzenia.
+          </p>
+          <a class="button button-light magnetic" href="#rezerwacja">
+            <span>Zapytaj o pakiet</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="rezerwacja" class="booking-section">
+        <div class="booking-heading reveal">
+          <p class="eyebrow">Rezerwacja / 5 minut</p>
+          <h2>Twój ruch.</h2>
+          <p>
+            Wybierz auto i sprawdź wolny termin w kalendarzu. Zajęte dni są
+            automatycznie blokowane.
+          </p>
+        </div>
+
+        <form
+          class="booking-form reveal"
+          name="rezerwacja"
+          method="POST"
+          action="dziekujemy.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="rezerwacja" />
+          <input id="booking-date-from" type="hidden" name="data_od" />
+          <input id="booking-date-to" type="hidden" name="data_do" />
+          <p class="hidden-field">
+            <label>Nie wypełniaj: <input name="bot-field" /></label>
+          </p>
+
+          <div class="availability-picker" aria-label="Kalendarz dostępności">
+            <div class="availability-topline">
+              <div>
+                <span class="availability-kicker">Dostępność</span>
+                <strong id="availability-month"></strong>
+              </div>
+              <div class="calendar-nav">
+                <button id="availability-prev" type="button" aria-label="Poprzedni miesiąc">←</button>
+                <button id="availability-next" type="button" aria-label="Następny miesiąc">→</button>
+              </div>
+            </div>
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Pn</span><span>Wt</span><span>Śr</span><span>Cz</span>
+              <span>Pt</span><span>So</span><span>Nd</span>
+            </div>
+            <div id="availability-calendar" class="availability-calendar"></div>
+            <div class="availability-footer">
+              <p id="availability-status">Najpierw wybierz samochód.</p>
+              <div class="calendar-legend">
+                <span><i class="legend-free"></i> Wolny</span>
+                <span><i class="legend-busy"></i> Zajęty</span>
+                <span><i class="legend-selected"></i> Twój termin</span>
+              </div>
+            </div>
+          </div>
+
+          <label>
+            <span>Imię i nazwisko</span>
+            <input name="imie" type="text" autocomplete="name" required placeholder="Jak mamy się zwracać?" />
+          </label>
+
+          <label>
+            <span>Telefon</span>
+            <input name="telefon" type="tel" autocomplete="tel" required placeholder="+48 ___ ___ ___" />
+          </label>
+
+          <label>
+            <span>Wybierz auto</span>
+            <select name="auto" id="booking-car" required>
+              <option value="">Wybierz model</option>
+              <option value="Toyota Supra MK5">Toyota Supra MK5</option>
+              <option value="Chevrolet Corvette C7">Chevrolet Corvette C7</option>
+              <option value="Jaguar F-Type">Jaguar F-Type</option>
+              <option value="BMW M3 G80">BMW M3 G80</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Pakiet</span>
+            <select name="pakiet" id="booking-package" required>
+              <option value="">Wybierz pakiet</option>
+              <option value="Starter — 4 godziny">Starter — 4 godziny</option>
+              <option value="Classical — 24 godziny">Classical — 24 godziny</option>
+              <option value="Weekend — 48 godzin">Weekend — 48 godzin</option>
+              <option value="Full week — 7 dni">Full week — 7 dni</option>
+              <option value="Pakiet eventowy">Pakiet eventowy</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Miasto dostawy</span>
+            <input name="miasto" type="text" autocomplete="address-level2" required placeholder="Gdzie dostarczyć auto?" />
+          </label>
+
+          <label class="form-message">
+            <span>Dodatkowe informacje</span>
+            <textarea name="wiadomosc" rows="4" placeholder="Napisz, czego potrzebujesz…"></textarea>
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" name="zgoda" required />
+            <span>Potwierdzam, że mam minimum 25 lat i prawo jazdy kat. B od co najmniej 3 lat.</span>
+          </label>
+
+          <button class="button button-primary magnetic form-submit" type="submit">
+            <span>Wyślij zapytanie</span>
+            <span>↗</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#start">
+        <span class="brand-mark">SCR</span>
+        <span class="brand-copy">SportCar<br />Rental Polska</span>
+      </a>
+      <p>Nie wypożyczamy aut.<br />Wypożyczamy emocje.</p>
+      <div>
+        <a href="#flota">Flota</a>
+        <a href="#pakiety">Cennik</a>
+        <a href="#rezerwacja">Rezerwacja</a>
+        <a href="kalendarz-admin.html">Panel kalendarza</a>
+      </div>
+      <span>© <span id="year">2026</span> SportCar Rental Polska</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090a" />
+    <title>Panel dostępności — SportCar Rental Polska</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin-calendar.css" />
+    <script src="availability.js" defer></script>
+    <script src="admin-calendar.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <header class="detail-header">
+      <a class="brand" href="index.html#start" aria-label="SportCar Rental Polska">
+        <span class="brand-mark">SCR</span>
+        <span class="brand-copy">SportCar<br />Rental Polska</span>
+      </a>
+      <a class="detail-back" href="index.html#rezerwacja"><span>←</span><span>Wróć do strony</span></a>
+    </header>
+
+    <main class="admin-main">
+      <div class="admin-heading">
+        <p class="eyebrow">Panel właściciela</p>
+        <h1>Kalendarz<br />dostępności.</h1>
+        <p>Kliknij dzień, aby zmienić jego status. Czerwony oznacza termin zajęty.</p>
+      </div>
+
+      <section class="admin-calendar-panel">
+        <div class="admin-panel-top">
+          <div>
+            <span class="admin-panel-label">Harmonogram floty</span>
+            <strong id="admin-month"></strong>
+          </div>
+          <div class="calendar-nav">
+            <button id="admin-prev" type="button" aria-label="Poprzedni miesiąc">←</button>
+            <button id="admin-next" type="button" aria-label="Następny miesiąc">→</button>
+          </div>
+        </div>
+
+        <div class="admin-controls">
+          <label>
+            <span>Samochód</span>
+            <select id="admin-car">
+              <option value="supra">Toyota Supra MK5</option>
+              <option value="corvette">Chevrolet Corvette C7</option>
+              <option value="jaguar">Jaguar F-Type</option>
+              <option value="bmw">BMW M3 G80</option>
+            </select>
+          </label>
+          <label class="admin-pin-label">
+            <span>PIN administratora</span>
+            <input id="admin-pin" type="password" inputmode="numeric" autocomplete="current-password" placeholder="••••" />
+          </label>
+        </div>
+
+        <div class="calendar-weekdays" aria-hidden="true">
+          <span>Pn</span><span>Wt</span><span>Śr</span><span>Cz</span>
+          <span>Pt</span><span>So</span><span>Nd</span>
+        </div>
+        <div id="admin-calendar" class="availability-calendar admin-calendar"></div>
+        <div class="admin-status">
+          <span><i></i> <strong id="admin-busy-count">0</strong> zajętych dni w tym miesiącu</span>
+          <p id="admin-message">Zmiany są zapisywane automatycznie.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

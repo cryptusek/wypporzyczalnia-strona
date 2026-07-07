@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090a" />
+    <title>Dziękujemy — SportCar Rental Polska</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .thanks {
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+        background:
+          linear-gradient(90deg, rgba(5,6,7,.94), rgba(5,6,7,.35)),
+          url("fleet-hero.png") center / cover;
+      }
+      .thanks-card { width: min(100%, 50rem); }
+      .thanks-card h1 {
+        margin: 0 0 1.5rem;
+        font-size: clamp(4rem, 11vw, 9rem);
+        line-height: .78;
+        letter-spacing: -.07em;
+        text-transform: uppercase;
+      }
+      .thanks-card p {
+        max-width: 35rem;
+        margin: 0 0 2rem;
+        color: rgba(255,255,255,.68);
+        line-height: 1.65;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="thanks">
+      <div class="thanks-card">
+        <p class="eyebrow">Zapytanie wysłane</p>
+        <h1>Twój ruch<br />wykonany.</h1>
+        <p>
+          Dziękujemy. Zespół SportCar Rental Polska otrzymał Twoje zapytanie i
+          wróci z potwierdzeniem dostępności.
+        </p>
+        <a class="button button-primary" href="/">
+          <span>Wróć na stronę</span><span>↗</span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

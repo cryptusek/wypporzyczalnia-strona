@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090a" />
+    <meta
+      name="description"
+      content="Galeria HD samochodu SportCar Rental Polska."
+    />
+    <title>Galeria samochodu — SportCar Rental Polska</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="car-detail.css" />
+    <script src="car-spin.js" defer></script>
+  </head>
+  <body class="detail-page">
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="detail-header">
+      <a class="brand" href="index.html#start" aria-label="SportCar Rental Polska — strona główna">
+        <span class="brand-mark">SCR</span>
+        <span class="brand-copy">SportCar<br />Rental Polska</span>
+      </a>
+
+      <a class="detail-back" href="index.html#flota">
+        <span>←</span>
+        <span>Wróć do floty</span>
+      </a>
+    </header>
+
+    <main class="detail-main">
+      <section class="spin-column" aria-label="Galeria samochodu">
+        <div class="spin-topline">
+          <span id="detail-index">01 / 04</span>
+          <span>Galeria HD / 8 ujęć</span>
+        </div>
+
+        <figure class="car-gallery">
+          <img id="detail-image" src="" alt="" />
+        </figure>
+        <div id="detail-thumbnails" class="detail-thumbnails" aria-label="Wybierz ujęcie samochodu"></div>
+      </section>
+
+      <section class="detail-copy">
+        <p id="detail-origin" class="eyebrow">Japan / RWD</p>
+        <h1 id="detail-name">Toyota<br />Supra MK5</h1>
+        <p id="detail-description" class="detail-description"></p>
+
+        <div class="detail-primary-specs">
+          <div><span>Moc</span><strong id="detail-power">340 KM</strong></div>
+          <div><span>0–100 km/h</span><strong id="detail-zero">4,3 s</strong></div>
+          <div><span>Doba od</span><strong id="detail-price">900 PLN</strong></div>
+        </div>
+
+        <dl class="detail-spec-list">
+          <div><dt>Silnik</dt><dd id="detail-engine">3.0L R6 Turbo</dd></div>
+          <div><dt>Napęd</dt><dd id="detail-drive">RWD</dd></div>
+          <div><dt>V-max</dt><dd id="detail-speed">250 km/h</dd></div>
+          <div><dt>Limit dobowy</dt><dd>250 km</dd></div>
+        </dl>
+
+        <div class="detail-actions">
+          <a id="detail-booking" class="button button-primary" href="index.html#rezerwacja">
+            <span>Zapytaj o termin</span>
+            <span>↗</span>
+          </a>
+          <a class="detail-secondary" href="index.html#pakiety">Zobacz wszystkie pakiety</a>
+        </div>
+      </section>
+    </main>
+
+    <nav class="detail-model-nav" aria-label="Inne samochody">
+      <a href="car.html?car=supra" data-detail-link="supra"><span>01</span> Supra MK5</a>
+      <a href="car.html?car=corvette" data-detail-link="corvette"><span>02</span> Corvette C7</a>
+      <a href="car.html?car=jaguar" data-detail-link="jaguar"><span>03</span> F-Type</a>
+      <a href="car.html?car=bmw" data-detail-link="bmw"><span>04</span> M3 G80</a>
+    </nav>
+  </body>
+</html>
